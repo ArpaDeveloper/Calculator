@@ -5,15 +5,152 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#263238"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="@string/minus_text"
+        android:textColor="#00B4D8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="212dp"
+        android:layout_height="216dp"
+        app:srcCompat="@drawable/sotakisu"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="0dp"
+        android:contentDescription="@string/image_text" />
+
+    <Button
+        android:id="@+id/MinusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/minus_text"
+        android:textColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-200dp"
+        android:layout_marginStart="-100dp" />
+
+    <Button
+        android:id="@+id/PlusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plus_text"
+        android:textColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-200dp"
+        android:layout_marginStart="-300dp" />
+
+    <Button
+        android:id="@+id/DivideButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/divide_text"
+        android:textColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-200dp"
+        android:layout_marginStart="100dp" />
+
+    <Button
+        android:id="@+id/MultiplyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/multiply_text"
+        android:textColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-200dp"
+        android:layout_marginStart="300dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#00B4D8"
+        app:boxStrokeColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-600dp"
+        android:layout_marginStart="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00B4D8"
+            android:textColorHint="#00B4D8"
+            android:hint="@string/minus_text" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        app:hintTextColor="#00B4D8"
+        app:boxStrokeColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-400dp"
+        android:layout_marginStart="0dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00B4D8"
+            android:textColorHint="#00B4D8"
+            android:hint="@string/minus_text" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_text"
+        android:textColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-670dp"
+        android:layout_marginStart="-300dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/input_text"
+        android:textColor="#00B4D8"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="-470dp"
+        android:layout_marginStart="-300dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
