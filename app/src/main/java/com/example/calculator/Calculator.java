@@ -21,17 +21,17 @@ public class Calculator {
 
     //Sum method
     public String sum(){
-        float result = number1+number2;
+        float result = Math.round((number1+number2)* 100.0f) / 100.0f;
         return String.valueOf(result);
     }
     //Subtraction method
     public String subtract(){
-        float result = number1-number2;
+        float result = Math.round((number1-number2)* 100.0f) / 100.0f;
         return String.valueOf(result);
     }
     //Multiply method
     public String multiply(){
-        float result = number1*number2;
+        float result = Math.round((number1*number2)* 100.0f) / 100.0f;
         return String.valueOf(result);
     }
     //Division method
@@ -41,7 +41,7 @@ public class Calculator {
             result = "error";
         }
         else{
-            float value = number1/number2;
+            float value = Math.round((number1/number2)* 100.0f) / 100.0f;
             result = String.valueOf(value);
         }
         return result;

@@ -77,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-    //Handling user input
+    //Handling user input//This was with the help of chatgpt
     void updateNumbers(TextInputEditText inputField1, TextInputEditText inputField2) {
-        // Read the input fields and convert them to float
+        //Read the input fields and convert them to float
         float number1 = 0, number2 = 0;
         if (inputField1.getText() != null && !inputField1.getText().toString().isEmpty()) {
             number1 = Float.parseFloat(inputField1.getText().toString());
@@ -88,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             number2 = Float.parseFloat(inputField2.getText().toString());
         }
 
-        // Update calculator numbers
+        //Update calculator numbers
         calculator.setNumber1(number1);
         calculator.setNumber2(number2);
     }
